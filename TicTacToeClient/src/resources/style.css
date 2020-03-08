@@ -1,0 +1,83 @@
+#main
+{
+    -fx-background-image: url("tic.jpg") ;
+    -fx-border-image-repeat: no-repeat ;
+    -fx-background-size: stretch ;
+}
+
+
+#signLabel{
+    
+     -fx-translate-x:595;
+    -fx-translate-y:20;
+    -fx-font-size: 24px;
+}
+
+#chatBox{
+    -fx-background-color: #c3e7ff !important;
+    -fx-font-size: 18px;
+    -fx-pref-height: 528px; 
+    -fx-pref-width: 342px;
+     -fx-translate-x:595;
+    -fx-translate-y:30;
+}
+#chatTextField{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold; 
+    -fx-pref-height: 20px; 
+    -fx-pref-width: 280px;
+    -fx-translate-x:595;
+    -fx-translate-y:565;
+}
+
+#chatBtn{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold; 
+    -fx-pref-height: 20px; 
+    -fx-pref-width: 60px;
+    -fx-translate-x:877;
+    -fx-translate-y:565;
+}
+
+#backBtn
+{
+    -fx-text-fill: #ee1212 ;
+    -fx-border-width: 4px ;
+    -fx-border-color: #ee1212;
+    -fx-border-radius: 4px;  
+    -fx-background-color:#f2ce79 ;
+    -fx-font-weight: bold; 
+    -fx-font-size: 18px;
+    -fx-pref-height: 50px; 
+    -fx-pref-width: 120px;
+    -fx-translate-x:877;
+    -fx-translate-y:600;
+}
+#backBtn:hover, #saveBtn:hover
+{
+    -fx-background-color:#E9BE59;
+}
+
+#saveBtn
+{
+    -fx-text-fill: #ee1212 ;
+    -fx-border-width: 4px ;
+    -fx-border-color: #ee1212;
+    -fx-border-radius: 4px;  
+    -fx-background-color:#f2ce79 ;
+    -fx-font-weight: bold; 
+    -fx-font-size: 18px;
+    -fx-pref-height: 50px; 
+    -fx-pref-width: 200px;
+    -fx-translate-x:670;
+    -fx-translate-y:600;  
+}
+
+
+#txt
+{
+    -fx-translate-x:10;
+    -fx-translate-y:570;
+    -fx-font-size: 50;
+}
+

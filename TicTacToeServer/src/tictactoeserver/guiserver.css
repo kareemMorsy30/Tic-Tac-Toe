@@ -1,0 +1,29 @@
+#AnchorPane
+{
+    -fx-background-image: url("play.jpg") ;
+    -fx-border-image-repeat: no-repeat ;
+    -fx-background-size: stretch ;
+}
+#endServerBtn
+{
+    -fx-background-color:#FAE1A7;
+    -fx-border-width: 4px ;
+   -fx-border-color:#CD853F ;
+   -fx-border-radius: 4px;
+}
+#startServerBtn
+{
+    -fx-background-color:#FAE1A7;
+    -fx-border-width: 4px ;
+   -fx-border-color:#CD853F ;
+   -fx-border-radius: 4px;
+}
+#startServerBtn:hover
+{
+    -fx-background-color:#B79B57;
+}
+#endServerBtn:hover
+{
+    -fx-background-color:#B79B57;
+}
+

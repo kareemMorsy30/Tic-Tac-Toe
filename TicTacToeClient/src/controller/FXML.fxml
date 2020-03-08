@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="808.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLController">
+   <stylesheets>
+        <URL value="@../resources/gui.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="playerList" layoutX="15.0" layoutY="22.0" prefHeight="492.0" prefWidth="349.0" style="-fx-font-size: 15px;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="91.0" sortable="false" text="Name" />
+          <TableColumn fx:id="status" prefWidth="91.0" sortable="false" text="Status" />
+            <TableColumn fx:id="score" prefWidth="78.0" sortable="false" text="Score" />
+            <TableColumn fx:id="level" prefWidth="88.0" sortable="false" text="Level" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <SepiaTone>
+               <input>
+                  <Glow>
+                     <input>
+                        <DropShadow>
+                           <input>
+                              <InnerShadow>
+                                 <input>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </input>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </input>
+                  </Glow>
+               </input>
+            </SepiaTone>
+         </effect>
+      </TableView>
+      <Button id="inviteBtn" layoutX="14.0" layoutY="525.0" mnemonicParsing="false" onAction="#inviteToPlay" prefHeight="54.0" prefWidth="169.0" text="Invite Friend" textFill="#ee1212">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button id="aiBtn" layoutX="199.0" layoutY="525.0" mnemonicParsing="false" onAction="#playWithAI" prefHeight="54.0" prefWidth="169.0" text="Play With AI" textFill="#ee1212">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label id="user" layoutX="380.0" layoutY="112.0" prefHeight="38.0" prefWidth="132.0" text="Username:" textFill="#ee1212">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="150.0" prefHeight="38.0" prefWidth="70.0" text="Score:" textFill="#ee1212">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView id="tableView" glyphName="USER" layoutX="379.0" layoutY="94.0" size="110" wrappingWidth="70.00000058114529" />
+      <Text fx:id="scoreText" layoutX="458.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="userNameText" layoutX="512.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label layoutX="380.0" layoutY="188.0" prefHeight="38.0" prefWidth="70.0" text="Level:" textFill="#ee1212">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="levelText" layoutX="458.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

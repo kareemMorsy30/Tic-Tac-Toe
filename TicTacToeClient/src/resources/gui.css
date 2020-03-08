@@ -1,0 +1,32 @@
+
+#AnchorPane
+{
+    -fx-background-image: url("tic.jpg") ;
+    -fx-border-image-repeat: no-repeat ;
+    -fx-background-size: stretch ;
+}
+#inviteBtn
+{
+   -fx-border-width: 4px ;
+   -fx-border-color: #ee1212;
+   -fx-border-radius: 4px;
+   -fx-background-color:#FAE1A7;
+   
+}
+#aiBtn
+{
+   -fx-border-width: 4px ;
+   -fx-border-color: #ee1212;
+   -fx-border-radius: 4px;
+   -fx-background-color:#FAE1A7 ;
+}
+#inviteBtn:hover
+{
+    -fx-background-color:#E9BE59 ;
+}
+#aiBtn:hover
+{
+    -fx-background-color:#E9BE59 ;
+}
+
+

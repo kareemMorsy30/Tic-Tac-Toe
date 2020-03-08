@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 17, 2020, 5:10:17 PM
+    Author     : seomac
+*/
+.dialog-pane{
+
+    -fx-background-color: #4358ba;
+}
+.dialog-pane > .header-panel{
+    -fx-background-color: #dbdbdb;
+}
+.dialog-pane > .content.label {
+    -fx-padding: 0.5em 0.2em;
+    -fx-text-fill:white;
+    -fx-background-color: #4358ba; 
+    -fx-font-size:15.0px;
+}
+/**Costumization of Buttons**/
+.dialog-pane .button{
+    -fx-background-color: #aab9ff;
+    -fx-text-fill:white;
+    -fx-wrap-text: true;
+    /*-fx-effect: dropshadow( three-pass-box, yellow, 10.0, 0.0, 0.0, 0.0);*/
+    -fx-cursor:hand;
+}
+
+.dialog-pane .button:hover{     
+    -fx-background-color:white;
+    -fx-text-fill:black;
+    -fx-font-weight:bold; 
+}
